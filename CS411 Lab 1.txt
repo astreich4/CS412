@@ -1,0 +1,88 @@
+Adam Streich 
+U99196358
+
+$ level intro1
+$ hint
+Just type in 'git commit' twice to finish!
+$ delay 2000
+$ show goal
+$ git commit
+$ git commit
+
+level intro2
+$ hint
+Make a new branch with "git branch " and check it out with "git checkout "
+$ delay 2000
+$ show goal
+$ git checkout -b bugFix
+
+$ level intro3
+$ hint
+Remember to commit in the order specified (bugFix before master)
+$ delay 2000
+$ show goal
+$ git checkout -b bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git merge bugFix
+
+$ level intro4
+$ hint
+Make sure you commit from bugFix first
+$ delay 2000
+$ show goal
+$ git checkout -b bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git checkout bugFix
+$ git rebase master
+
+$ level rampup1
+$ hint
+Use the label (hash) on the commit for help!
+$ delay 2000
+$ show goal
+$ git checkout c4
+
+$ level rampup2
+$ hint
+Remember the Caret (^) operator!
+$ delay 2000
+$ show goal
+$ git checkout bugFix^
+
+$ level rampup3
+$ hint
+You'll need to use at least one direct reference (hash) to complete this level
+$ delay 2000
+$ show goal
+$ git branch -f master c6
+$ git branch -f bugFix HEAD~2
+$ git checkout C1
+
+$ level rampup4
+$ hint
+Notice that revert and reset take different arguments.
+$ delay 2000
+$ show goal
+$ git reset local^
+$ git checkout pushed
+$ git revert pushed
+
+$ level move1
+$ hint
+git cherry-pick followed by commit names!
+$ delay 2000
+$ show goal
+$ git cherry-pick C3
+$ git cherry-pick C4
+$ git cherry-pick C7
+
+$ level move2
+$ hint
+you can use either branches or relative refs (HEAD~) to specify the rebase target
+$ delay 2000
+$ show goal
+$ git rebase -i HEAD~4
