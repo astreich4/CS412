@@ -26,3 +26,5 @@ const parse = (inpt) => {
 const expression = '8*3';
 let operator = getOp(expression);
 console.log(`${expression} = ${operator(parse(expression)[0],parse(expression)[1])}`)
+
+module.exports = {parse,getOp}

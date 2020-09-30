@@ -15,3 +15,5 @@ return temp;
 }
 )
 );
+
+module.exports = {foo}
