@@ -19,6 +19,10 @@ const getOp = inpt => {
     }
 }
 
+const parse = (inpt) => {
+    return [inpt.charAt(0),inpt.charAt(2)];
+}
+
 const expression = '8*3';
 let operator = getOp(expression);
-console.log(`${expression} = ${operator(8,3)}`)
+console.log(`${expression} = ${operator(parse(expression)[0],parse(expression)[1])}`)
