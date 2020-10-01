@@ -39,13 +39,13 @@ describe('Test for p3', ()=>{
 
     it('should return an object with the original String, modified strring, number replaced, and the length when given supercalifragilisticexpialidocious and the lambda function ', ()=>{
         let res = foo('supercalifragilisticexpialidocious', (inp) => {
-                let temp = {
+                let objectOfStringInfo = {
                     originalString: inp,
                     modifiedString: inp.replace(/a/g,"A"),
                     numberReplaced: inp.replace(/a/g,"A").split("A").length-1,
                     length: inp.length
                 };
-                return temp;
+                return objectOfStringInfo;
             }
         );
         let ans = {

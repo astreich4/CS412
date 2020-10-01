@@ -5,13 +5,13 @@ console.log( foo('supercalifragilisticexpialidocious', (inp) => inp.replace(/c/g
 
 console.table(
 foo('supercalifragilisticexpialidocious', (inp) => {
-    let temp = {
+    let objectOfStringInfo = {
         originalString: inp,
         modifiedString: inp.replace(/a/g,"A"),
         numberReplaced: inp.replace(/a/g,"A").split("A").length-1,
         length: inp.length
     };
-return temp;
+return objectOfStringInfo;
 }
 )
 );
