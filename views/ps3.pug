@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 This is the pug page
+    if page == 2
+        h2.green Number c
+        p #{inptString} and the lenght is #{strLen}
+    else if page == 1
+        h2.green Number b
+        p #{inptString}
