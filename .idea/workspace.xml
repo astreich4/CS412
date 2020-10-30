@@ -17,8 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="package.json" />
+        <option value="Pug File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -53,12 +54,12 @@
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/views" />
       <recent name="$PROJECT_DIR$/routes" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -80,23 +81,10 @@
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="www" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/bin/www" working-dir="$PROJECT_DIR$/bin">
+    <configuration name="ps4.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/routes/ps4.js" working-dir="$PROJECT_DIR$/routes">
       <method v="2" />
     </configuration>
-    <configuration name="Test for p1.should make [super1234califragilisticexpialidocious] aplhabetical order, then reverse it, ignoring numbers " type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/unitTests.js</test-file>
-      <test-names>
-        <name value="Test for p1" />
-        <name value="should make [super1234califragilisticexpialidocious] aplhabetical order, then reverse it, ignoring numbers " />
-      </test-names>
+    <configuration name="www" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/bin/www" working-dir="$PROJECT_DIR$/bin">
       <method v="2" />
     </configuration>
     <configuration name="unitTests.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
@@ -114,10 +102,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.www" />
+        <item itemvalue="Node.js.ps4.js" />
         <item itemvalue="Node.js.app.js" />
         <item itemvalue="Node.js.PS1.P2.js" />
         <item itemvalue="Mocha.unitTests.js" />
-        <item itemvalue="Mocha.Test for p1.should make [super1234califragilisticexpialidocious] aplhabetical order, then reverse it, ignoring numbers " />
       </list>
     </recent_temporary>
   </component>
@@ -137,6 +125,7 @@
       <workItem from="1603156357055" duration="1502000" />
       <workItem from="1603211193813" duration="667000" />
       <workItem from="1603255388473" duration="1356000" />
+      <workItem from="1604022044770" duration="6194000" />
     </task>
     <servers />
   </component>

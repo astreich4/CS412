@@ -1,0 +1,12 @@
+h1="Hello, find out how old you are base on your name! It's an exact Science!"
+
+if page == 1
+    p "Hit enter to submit form"
+    body
+        form(action='/ps4',method='POST')
+            input(name='name',value='')
+else if page == 2
+    p your age is: #{val}
+
+
+
