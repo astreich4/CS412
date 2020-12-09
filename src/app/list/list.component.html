@@ -1,0 +1,22 @@
+
+
+
+<div *ngIf="clickMessage == true">
+  <ul *ngFor="let name of names">
+  <li>{{name.Name + " " + name.Age}}</li>
+</ul>
+
+</div>
+<div>
+  <button (click)="onClickMe()">Click me to grab data!</button>
+
+</div>
+<!--
+<br/>
+<input type="text" [(ngModel)]="fubar"> {{fubar}}
+-->
+
+<!--0
+[ ] = inbound from model
+( ) = event / outbound to the model
+-->
