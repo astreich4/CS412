@@ -1,3 +1,6 @@
+#The App
+This app shows you mock data when you click the button of the name and then the age of the person with that name.
+
 # EmptyAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
