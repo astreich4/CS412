@@ -1,15 +1,19 @@
 
 
 
-<div *ngIf="clickMessage == true">
+<div>
   <ul *ngFor="let name of names">
-  <li>{{name.Name + " " + name.Age}}</li>
+
+    <li (click)="setSelectedName(name)">{{name.Name}}</li>
 </ul>
 
 </div>
 <div>
   <button (click)="onClickMe()">Click me to grab data!</button>
-
+</div>
+<div *ngIf="clickMessage == true">
+ <!-- <input type="text" [(ngModel)]="selectedPerson.Age">-->
+  <li>{{selectedPerson.Age}}</li>
 </div>
 <!--
 <br/>

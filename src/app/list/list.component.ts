@@ -18,5 +18,12 @@ export class ListComponent {
   // tslint:disable-next-line:typedef
   onClickMe() {
     this.clickMessage = true;
+
+  }
+
+  setSelectedName(person: NameAge): void {
+    this.clickMessage = false;
+    this.selectedPerson = person;
+    console.log(`${person.Name}`);
   }
 }
