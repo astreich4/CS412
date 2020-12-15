@@ -1,6 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import {BackendServiceService } from "../services/backend-service.service";
-//import { clickMessage } from "../show-me-the-data/show-me-the-data.component";
+import {BackendServiceService } from '../services/backend-service.service';
+// import { clickMessage } from "../show-me-the-data/show-me-the-data.component";
+
+interface NM {
+
+  value: object;
+  cashed: object;
+}
+
+
 
 @Component({
   selector: 'app-call-to-service',
@@ -8,28 +16,29 @@ import {BackendServiceService } from "../services/backend-service.service";
   styleUrls: ['./call-to-service.component.css']
 })
 export class CallToServiceComponent implements OnInit {
-  selectedPerson: String;
+  selectedPerson: string;
   answerFromService: any;
+  clicked: boolean;
 
   constructor( private BEService: BackendServiceService) { }
 
   ngOnInit(): void {
   }
 
-  onClickMe() { //calls service to call backend to call api
+  onClickMe() { // calls service to call backend to call api
                 // @ts-ignore
+  // console.log(this.selectedPerson);
+    this.clicked = true;
+    this.BEService.callNameAPI(this.selectedPerson).subscribe(
+      (response: NM) => {
+      console.log(`response: ` , response );
+      this.answerFromService = [response.value, response.cashed];
 
-    this.BEService.callNameAPI().subscribe(
-      (response) => {
-      console.log(`response: ${response}`);
-      this.answerFromService = response['current'];
     }
-
-  )
+  );
   }
 
-  setClickMeFalse() {
-
-
+  setClickFalse() {
+  this.clicked = false;
   }
 }

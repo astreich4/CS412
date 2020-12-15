@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 
 
@@ -11,21 +11,16 @@ import { Component, OnInit } from '@angular/core';
 export class ShowMeTheDataComponent implements OnInit {
 
 
-  names: any;
-  private _clickMessage: boolean;
+  @Input() names: any;
+  @Input() clicked: boolean
 
-  //response from api
+
+  // response from api
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  get clickMessage(): boolean {
-    return this._clickMessage;
-  }
 
-   set clickMessage(value: boolean) {
-    this._clickMessage = value;
-  }
 }

@@ -9,8 +9,8 @@ export class BackendServiceService {
 
   constructor(private http: HttpClient) { }
 
-  callNameAPI() {
-  return this.http.get(backEndConfig.baseURL, {observe: 'body', responseType: 'json'})
+  callNameAPI(param) {
+  return this.http.post(backEndConfig.baseURL, {name: param , observe: 'body', responseType: 'json'})
   }
 
 }

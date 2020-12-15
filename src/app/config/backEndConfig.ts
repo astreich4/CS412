@@ -1,3 +1,3 @@
 export let backEndConfig = {
-baseURL: "http://localhost:3000"
+baseURL: "http://localhost:3000/ps4"
 }

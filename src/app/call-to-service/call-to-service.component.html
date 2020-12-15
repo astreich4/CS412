@@ -1,8 +1,10 @@
 <p>call-to-service works!</p>
 <div>
-  <input type="text" [(ngModel)]="selectedPerson">
+  <input (click)="setClickFalse()" type="text" [(ngModel)]="selectedPerson">
 
 </div>
 <div>
   <button (click)="onClickMe()">Click me to grab data!</button>
 </div>
+
+<app-show-me-the-data [names]="answerFromService" [clicked]="clicked"></app-show-me-the-data>
